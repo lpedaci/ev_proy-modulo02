@@ -63,51 +63,9 @@ No se usa ningún framework ni librería externa. El proyecto es 100% estático 
 
 ---
 
-## Cómo desplegar en GitHub Pages
-
-### Prerequisitos
-- Tener una cuenta en [github.com](https://github.com)
-- Tener Git instalado en tu PC ([descargar](https://git-scm.com))
-
-### Pasos
-
-**1. Crear el repositorio en GitHub**
-
-Ir a [github.com/new](https://github.com/new) y crear un repositorio con el nombre que quieras (ej: `evaluacion-proyectos`). Dejarlo en **público** y sin inicializar (sin README, sin .gitignore).
-
-**2. Subir los archivos desde tu PC**
-
-Abrí una terminal (o Git Bash en Windows) dentro de la carpeta del proyecto y ejecutá:
-
-```bash
-git init
-git add .
-git commit -m "primer commit"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/evaluacion-proyectos.git
-git push -u origin main
-```
-
-> Reemplazá `TU_USUARIO` con tu nombre de usuario de GitHub.
-
-**3. Activar GitHub Pages**
-
-1. Ir al repositorio en GitHub → pestaña **Settings**
-2. En el menú izquierdo, hacer clic en **Pages**
-3. En *Branch*, seleccionar `main` y carpeta `/ (root)`
-4. Hacer clic en **Save**
-
-En unos minutos la web va a estar disponible en:
-
-```
-https://TU_USUARIO.github.io/evaluacion-proyectos/
-```
-
----
-
 ## Créditos
 
-- **Docente**: Prof. Pedaci, Lourdes
+- **Docente**: Prof. Pedaci, Lourdes [LinkedIn](https://www.linkedin.com/in/lourdes-pedaci/)
 - **Institución**: Instituto Leonardo Murialdo · 7mo Informática 2026
 - **Módulo**: 02 - Fases de un Proyecto
 
