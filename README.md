@@ -1,8 +1,8 @@
 # Evaluación de Proyectos
 ### Caso de uso: Ferretería El Tornillo
 
-> Material educativo para **7mo Informática 2026** · Instituto Leonardo Murialdo  
-> Prof. Pedaci, Lourdes · Módulo 2 — Fases de un proyecto
+> Material educativo para **7mo Informática 2026** - Instituto Leonardo Murialdo  
+> Prof. Pedaci, Lourdes - Módulo 2 — Fases de un proyecto
 
 ---
 
@@ -107,10 +107,9 @@ https://TU_USUARIO.github.io/evaluacion-proyectos/
 
 ## Créditos
 
-- **Alumno/a**: _(completar con nombre del equipo)_
 - **Docente**: Prof. Pedaci, Lourdes
 - **Institución**: Instituto Leonardo Murialdo · 7mo Informática 2026
-- **Módulo**: 02 — Fases de un Proyecto
+- **Módulo**: 02 - Fases de un Proyecto
 
 ---
 
