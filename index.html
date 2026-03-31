@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluación de Proyectos — Caso de uso: Ferretería El Tornillo</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Evaluación de <span>Proyectos</span></div>
+    <div class="nav-links">
+      <a href="#caso" class="act">Caso de uso</a>
+      <a href="#entrevista">Entrevista</a>
+      <a href="#analisis">Análisis</a>
+      <a href="#requerimientos">Requerimientos</a>
+      <a href="#okrs">OKRs</a>
+      <a href="#perfiles">Perfiles</a>
+    </div>
+    <div class="nav-burger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <button class="close-btn">✕</button>
+  <a href="#caso">Caso de uso</a>
+  <a href="#entrevista">Entrevista</a>
+  <a href="#analisis">Análisis</a>
+  <a href="#requerimientos">Requerimientos</a>
+  <a href="#okrs">OKRs</a>
+  <a href="#perfiles">Perfiles</a>
+</div>
+
+<!-- TOC -->
+<div class="toc-pill">
+  <a href="#caso"           class="toc-item" data-section="caso">Caso</a>
+  <a href="#entrevista"     class="toc-item" data-section="entrevista">Entrevista</a>
+  <a href="#analisis"       class="toc-item" data-section="analisis">Análisis</a>
+  <a href="#requerimientos" class="toc-item" data-section="requerimientos">RF / RNF</a>
+  <a href="#okrs"           class="toc-item" data-section="okrs">OKRs</a>
+  <a href="#perfiles"       class="toc-item" data-section="perfiles">Perfiles</a>
+</div>
+
+<!-- HERO -->
+<div class="hero" id="hero">
+  <div class="hero-kicker fade-up">Módulo 2 — Fases de un proyecto</div>
+  <h1 class="fade-up fade-up-d1">Del <em>problema real</em> al requerimiento concreto</h1>
+  <p class="hero-sub fade-up fade-up-d2">Un caso de uso completo: cómo entrevistar a un usuario, analizar sus necesidades, y transformarlas en requerimientos funcionales, no funcionales y OKRs medibles.</p>
+  <div class="hero-meta fade-up fade-up-d3">
+    <div class="hero-badge"><strong>Roberto Fernández</strong> · Ferretería El Tornillo, Villa Bosch</div>
+    <div class="hero-badge"><strong>Prof. Pedaci, Lourdes</strong> · 7mo Informática 2026</div>
+  </div>
+  <div class="hero-scroll fade-up fade-up-d4">
+    <a href="#caso" class="btn-primary">Empezar el caso →</a>
+    <a href="#entrevista" class="btn-sec">Ver el formulario</a>
+  </div>
+  <div class="hero-diagram fade-up fade-up-d4">
+    <div class="hd-step"><div class="hd-num">E01</div><div class="hd-lbl">Validación del problema</div></div>
+    <div class="hd-step"><div class="hd-num">E02</div><div class="hd-lbl">Factibilidad</div></div>
+    <div class="hd-step"><div class="hd-num">E03</div><div class="hd-lbl">Diseño del sistema</div></div>
+    <div class="hd-step"><div class="hd-num">E04</div><div class="hd-lbl">Prototipado</div></div>
+    <div class="hd-step"><div class="hd-num">E05</div><div class="hd-lbl">Desarrollo</div></div>
+    <div class="hd-step"><div class="hd-num">E06</div><div class="hd-lbl">Presentación</div></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- 01 CASO DE USO -->
+<section id="caso">
+  <div class="sec-label">01 — El punto de partida</div>
+  <h2 class="sec-title">El usuario real</h2>
+  <p class="sec-desc">Todo proyecto debe nacer de una necesidad detectada en un potencial cliente concreto. Este es el nuestro.</p>
+
+  <div class="split">
+    <div class="split-explain">
+      <div class="explain-card">
+        <div class="explain-num">01</div>
+        <div class="explain-title">¿Por qué un usuario real?</div>
+        <div class="explain-body">
+          <p>El punto de partida obligatorio del proyecto es un <strong>problema real validado con un usuario o cliente concreto</strong>. No se admiten proyectos sobre problemas hipotéticos ni sobre situaciones internas de la institución.</p>
+          <p>La solución debe dirigirse al mercado global o a una organización externa. El equipo debe demostrar que ha diferenciado entre las <strong>causas del problema</strong> y los simples síntomas.</p>
+          <p>El usuario será citado físicamente en etapas específicas del proyecto para dar su devolución.</p>
+        </div>
+      </div>
+      <div class="explain-card" style="border-color:#c45e1a22;background:#fff9f5;">
+        <div class="explain-title" style="color:var(--warm);">El principio fundamental</div>
+        <div class="explain-body">
+          <p>Antes de escribir una sola línea de código, el equipo debe realizar un relevamiento exhaustivo mediante entrevistas estructuradas para <strong>diagnosticar la situación actual del cliente</strong>.</p>
+          <p><em>Definición incorrecta → solución incorrecta.</em></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="user-card">
+        <div class="uc-header">
+          <div class="uc-avatar">RF</div>
+          <div>
+            <div class="uc-name">Roberto Fernández</div>
+            <div class="uc-role">Dueño · Ferretería El Tornillo · Villa Bosch, Tres de Febrero</div>
+          </div>
+        </div>
+        <div class="uc-body">
+          <div class="uc-row"><div class="uc-key">Edad</div><div class="uc-val">58 años</div></div>
+          <div class="uc-row"><div class="uc-key">Negocio</div><div class="uc-val">Ferretería de barrio, 80m², 22 años en el rubro</div></div>
+          <div class="uc-row"><div class="uc-key">Personal</div><div class="uc-val">Él + 1 empleado (Juan)</div></div>
+          <div class="uc-row"><div class="uc-key">Sistema actual</div><div class="uc-val warn">Excel desactualizado + papel</div></div>
+          <div class="uc-row"><div class="uc-key">Problema principal</div><div class="uc-val warn">Pierde ventas por falta de stock y compra de más por falta de historial</div></div>
+          <div class="uc-row"><div class="uc-key">Presencia digital</div><div class="uc-val">Facebook desactualizado, Google Maps 4.2★</div></div>
+        </div>
+      </div>
+      <div class="explain-card" style="margin-top:1rem;">
+        <div class="explain-title">Los tres síntomas que menciona Roberto</div>
+        <div class="explain-body">
+          <div class="steps-list">
+            <div class="step-item">
+              <div class="step-circle" style="background:#a32d2d;font-size:.8rem;">S1</div>
+              <div class="step-body"><div class="step-title">"A veces no tengo lo que el cliente pide"</div><div class="step-desc">Parece mala suerte. En realidad: no hay sistema de alerta de reposición ni actualización automática de stock por venta.</div></div>
+            </div>
+            <div class="step-item">
+              <div class="step-circle" style="background:#a32d2d;font-size:.8rem;">S2</div>
+              <div class="step-body"><div class="step-title">"El control de stock me lleva horas"</div><div class="step-desc">Parece ineficiencia personal. En realidad: el inventario no se actualiza automáticamente; cada control implica recorrer físicamente el local.</div></div>
+            </div>
+            <div class="step-item">
+              <div class="step-circle" style="background:#a32d2d;font-size:.8rem;">S3</div>
+              <div class="step-body"><div class="step-title">"Compro de más y después no vendo"</div><div class="step-desc">Parece mala administración. En realidad: no hay registro histórico de rotación por producto; compra por intuición.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 02 ENTREVISTA -->
+<section id="entrevista">
+  <div class="sec-label">02 — Investigación de campo</div>
+  <h2 class="sec-title">El formulario de entrevista</h2>
+  <p class="sec-desc">Antes de codear, entrevistar. Cada bloque tiene una estructura específica y un propósito concreto. Explorá los bloques y completá el formulario de práctica.</p>
+
+  <div class="split">
+    <div class="split-explain">
+      <div class="explain-card">
+        <div class="explain-num">02</div>
+        <div class="explain-title">¿Por qué estructurar la entrevista?</div>
+        <div class="explain-body">
+          <p>Una entrevista sin estructura produce información vaga. Con estructura produce <strong>datos medibles</strong> que se convierten en requerimientos.</p>
+          <p>Cada bloque usa una técnica diferente según el objetivo:</p>
+        </div>
+      </div>
+      <div class="explain-card">
+        <div class="explain-title">Las 4 estructuras posibles</div>
+        <div class="explain-body">
+          <div class="steps-list">
+            <div class="step-item">
+              <div class="step-circle" style="width:36px;height:36px;font-size:.75rem;background:#185fa5;">▲</div>
+              <div class="step-body"><div class="step-title">Pirámide</div><div class="step-desc">Empieza con preguntas cerradas (contexto), luego abre hacia preguntas abiertas. Para usuarios que necesitan ganar confianza.</div></div>
+            </div>
+            <div class="step-item">
+              <div class="step-circle" style="width:36px;height:36px;font-size:.75rem;background:#0f6e56;">▼</div>
+              <div class="step-body"><div class="step-title">Embudo</div><div class="step-desc">Empieza amplio y va cerrando. Ideal para explorar opiniones antes de llegar a conclusiones concretas.</div></div>
+            </div>
+            <div class="step-item">
+              <div class="step-circle" style="width:36px;height:36px;font-size:.75rem;background:#534ab7;">◆</div>
+              <div class="step-body"><div class="step-title">Diamante</div><div class="step-desc">Combina ambas: cierra → abre → cierra. Para entrevistas equilibradas donde se necesita confirmar.</div></div>
+            </div>
+            <div class="step-item">
+              <div class="step-circle" style="width:36px;height:36px;font-size:.75rem;background:#993556;">…</div>
+              <div class="step-body"><div class="step-title">Sondeo</div><div class="step-desc">Sin estructura fija. Se adapta a las respuestas. Para cuando el usuario da respuestas vagas que hay que profundizar.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="note-box info">
+        <strong>Importante:</strong> Los bloques B (tecnología) y F (accesibilidad) son nuevos en esta versión. Sin esas preguntas, el equipo no sabe en qué plataforma construir el sistema ni cómo diseñar la interfaz para el usuario real.
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div>
+      <div class="form-container">
+        <div class="fc-header">
+          <h3>Entrevista de relevamiento — Ferretería El Tornillo</h3>
+          <p>Entrevistado: Roberto Fernández &nbsp;·&nbsp; Versión 2 &nbsp;·&nbsp; ~45 minutos</p>
+        </div>
+        <div class="fc-progress"><div class="fc-bar" id="fc-bar"></div></div>
+
+        <!-- BLOQUE A -->
+        <div class="form-block open">
+          <div class="form-block-header" onclick="toggleBlock(this)">
+            <div class="fb-num">A</div>
+            <div class="fb-title">Perfil del entrevistado</div>
+            <div class="fb-badge piramide">Pirámide</div>
+            <div class="fb-arrow">▼</div>
+          </div>
+          <div class="form-block-body">
+            <div class="note-box info" style="margin-bottom:.75rem;">Preguntas cerradas para contextualizar antes de abrir el diálogo. El entrevistado se relaja respondiendo cosas concretas.</div>
+            <div class="fq">
+              <div class="fq-label">1. ¿Cuántos años lleva al frente de la ferretería? <span class="fq-type c">cerrada</span></div>
+              <select onchange="updateProgress()"><option value="">— seleccionar —</option><option>Menos de 5 años</option><option>5 a 10 años</option><option>11 a 20 años</option><option>Más de 20 años</option></select>
+            </div>
+            <div class="fq">
+              <div class="fq-label">2. ¿Cuántas personas trabajan en el local? <span class="fq-type c">cerrada</span></div>
+              <select onchange="updateProgress()"><option value="">— seleccionar —</option><option>Solo yo</option><option>2 personas</option><option>3 a 5 personas</option><option>Más de 5</option></select>
+            </div>
+            <div class="fq">
+              <div class="fq-label">3. ¿Usa actualmente algún sistema para gestionar el stock? <span class="fq-type c">cerrada</span></div>
+              <div class="radio-group">
+                <label><input type="radio" name="q3" onchange="updateProgress()"> Sí, un software específico</label>
+                <label><input type="radio" name="q3" onchange="updateProgress()"> Sí, Excel / planilla</label>
+                <label><input type="radio" name="q3" onchange="updateProgress()"> No, solo papel</label>
+                <label><input type="radio" name="q3" onchange="updateProgress()"> No uso ningún sistema</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOQUE B -->
+        <div class="form-block">
+          <div class="form-block-header" onclick="toggleBlock(this)">
+            <div class="fb-num">B</div>
+            <div class="fb-title">Tecnología y dispositivos <span class="new-tag">nuevo</span></div>
+            <div class="fb-badge piramide">Pirámide</div>
+            <div class="fb-arrow">▼</div>
+          </div>
+          <div class="form-block-body">
+            <div class="note-box success" style="margin-bottom:.75rem;">Este bloque determina la <strong>plataforma</strong> del sistema. Si Roberto usa el celular, el sistema es mobile-first. Si el WiFi es inestable, el sistema necesita modo offline. Sin estas respuestas, el equipo puede diseñar para la plataforma equivocada.</div>
+            <div class="fq">
+              <div class="fq-label">4. ¿Qué dispositivo usa más en su día a día en el local? <span class="fq-type c">cerrada</span></div>
+              <div class="fq-hint">→ Define la plataforma principal del sistema.</div>
+              <div class="radio-group">
+                <label><input type="radio" name="q4" onchange="updateProgress()"> Celular (smartphone)</label>
+                <label><input type="radio" name="q4" onchange="updateProgress()"> Computadora de escritorio</label>
+                <label><input type="radio" name="q4" onchange="updateProgress()"> Notebook / laptop</label>
+                <label><input type="radio" name="q4" onchange="updateProgress()"> Tablet</label>
+                <label><input type="radio" name="q4" onchange="updateProgress()"> No uso ninguno regularmente</label>
+              </div>
+            </div>
+            <div class="fq">
+              <div class="fq-label">5. ¿Qué aplicaciones usa habitualmente? <span class="fq-type o">abierta</span></div>
+              <div class="fq-hint">→ Explorar WhatsApp, redes sociales, banca online, apps de pedidos. Revela patrones de interacción ya conocidos por el usuario.</div>
+              <textarea placeholder="Notas del entrevistador..." oninput="updateProgress()"></textarea>
+            </div>
+            <div class="fq">
+              <div class="fq-label">6. ¿Preferiría usar el sistema en el celular o en una computadora? <span class="fq-type c">cerrada</span></div>
+              <div class="radio-group">
+                <label><input type="radio" name="q6" onchange="updateProgress()"> En el celular, lo tengo siempre a mano</label>
+                <label><input type="radio" name="q6" onchange="updateProgress()"> En la computadora del local</label>
+                <label><input type="radio" name="q6" onchange="updateProgress()"> Me es indistinto</label>
+                <label><input type="radio" name="q6" onchange="updateProgress()"> Dependería de qué tan fácil sea</label>
+              </div>
+            </div>
+            <div class="fq">
+              <div class="fq-label">7. ¿Tiene conexión a internet en el local? ¿Es estable? <span class="fq-type c">cerrada</span></div>
+              <div class="fq-hint">→ Define si el sistema puede ser 100% online o necesita modo offline. Esto puede cambiar toda la arquitectura.</div>
+              <div class="radio-group">
+                <label><input type="radio" name="q7" onchange="updateProgress()"> Sí, WiFi estable</label>
+                <label><input type="radio" name="q7" onchange="updateProgress()"> Sí, pero con cortes frecuentes</label>
+                <label><input type="radio" name="q7" onchange="updateProgress()"> Solo datos móviles del celular</label>
+                <label><input type="radio" name="q7" onchange="updateProgress()"> No tengo internet en el local</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOQUE C -->
+        <div class="form-block">
+          <div class="form-block-header" onclick="toggleBlock(this)">
+            <div class="fb-num">C</div>
+            <div class="fb-title">Usuarios del sistema <span class="new-tag">nuevo</span></div>
+            <div class="fb-badge embudo">Embudo</div>
+            <div class="fb-arrow">▼</div>
+          </div>
+          <div class="form-block-body">
+            <div class="note-box success" style="margin-bottom:.75rem;">Cada persona que interactúa con el sistema es un perfil nuevo con accesos, pantallas y lógica distinta. No preguntar esto genera sistemas con un solo perfil que luego no escalan.</div>
+            <div class="fq">
+              <div class="fq-label">8. ¿Hay otras personas que podrían usar el sistema? <span class="fq-type c">cerrada</span></div>
+              <div class="radio-group">
+                <label><input type="radio" name="q8" onchange="updateProgress()"> No, solo yo</label>
+                <label><input type="radio" name="q8" onchange="updateProgress()"> Sí, mi empleado/a</label>
+                <label><input type="radio" name="q8" onchange="updateProgress()"> Sí, más de una persona</label>
+                <label><input type="radio" name="q8" onchange="updateProgress()"> A veces me ayuda un familiar</label>
+              </div>
+            </div>
+            <div class="fq">
+              <div class="fq-label">9. ¿Qué tareas haría cada persona en el sistema? <span class="fq-type s">sondeo</span></div>
+              <div class="fq-hint">→ Detectar si todos necesitan acceso completo o si hay operaciones exclusivas del dueño.</div>
+              <textarea placeholder="Ej: Juan solo registra ventas. Yo quiero ser el único que puede ver los precios de costo..." oninput="updateProgress()"></textarea>
+            </div>
+            <div class="fq">
+              <div class="fq-label">10. ¿Le preocuparía que un empleado pudiera ver o modificar algo que no debería? <span class="fq-type c">cerrada</span></div>
+              <div class="fq-hint">→ Mide la necesidad real de un sistema de permisos. Si dice sí, hay que contemplar roles en los RF.</div>
+              <div class="radio-group">
+                <label><input type="radio" name="q10" onchange="updateProgress()"> Sí, hay cosas que solo yo debo ver</label>
+                <label><input type="radio" name="q10" onchange="updateProgress()"> No me molestaría que vea todo</label>
+                <label><input type="radio" name="q10" onchange="updateProgress()"> No lo había pensado</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOQUE D -->
+        <div class="form-block">
+          <div class="form-block-header" onclick="toggleBlock(this)">
+            <div class="fb-num">D</div>
+            <div class="fb-title">Situación actual</div>
+            <div class="fb-badge embudo">Embudo</div>
+            <div class="fb-arrow">▼</div>
+          </div>
+          <div class="form-block-body">
+            <div class="note-box info" style="margin-bottom:.75rem;">Preguntas abiertas para que Roberto cuente su historia. Acá aparecen los síntomas. El entrevistador escucha y toma notas, no interrumpe.</div>
+            <div class="fq">
+              <div class="fq-label">11. Contame cómo es un día típico de trabajo en el local. <span class="fq-type o">abierta</span></div>
+              <div class="fq-hint">→ Escuchar sin interrumpir. Anotar palabras clave sobre el flujo de trabajo.</div>
+              <textarea placeholder="Notas del entrevistador..." oninput="updateProgress()"></textarea>
+            </div>
+            <div class="fq">
+              <div class="fq-label">12. ¿Cómo sabe qué productos tiene en stock y cuándo pedir más? <span class="fq-type o">abierta</span></div>
+              <div class="fq-hint">→ Explorar si hay un proceso formal o es "de memoria".</div>
+              <textarea placeholder="Notas del entrevistador..." oninput="updateProgress()"></textarea>
+            </div>
+            <div class="fq">
+              <div class="fq-label">13. ¿Le pasó que un cliente pidió algo que no tenía, o que compró de más? <span class="fq-type o">abierta</span></div>
+              <div class="fq-hint">→ Detectar la pérdida económica real. Preguntar con qué frecuencia ocurre.</div>
+              <textarea placeholder="Notas del entrevistador..." oninput="updateProgress()"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOQUE E -->
+        <div class="form-block">
+          <div class="form-block-header" onclick="toggleBlock(this)">
+            <div class="fb-num">E</div>
+            <div class="fb-title">Cuantificación del problema</div>
+            <div class="fb-badge likert">Escala Likert</div>
+            <div class="fb-arrow">▼</div>
+          </div>
+          <div class="form-block-body">
+            <div class="note-box info" style="margin-bottom:.75rem;">Las opiniones se vuelven <strong>datos medibles</strong>. "Me cuesta mucho" → 4/5. "Pierdo bastantes ventas" → 6–15 por mes. Estos números son la <strong>línea de base</strong> para el Benchmarking.</div>
+            <div class="fq">
+              <div class="fq-label">14. ¿Cuánto tiempo le lleva hacer un control de stock manual? <span class="fq-type c">cerrada</span></div>
+              <select onchange="updateProgress()"><option value="">— seleccionar —</option><option>Menos de 30 min</option><option>30 min a 1 hora</option><option>1 a 3 horas</option><option>Más de 3 horas</option><option>No lo hago regularmente</option></select>
+            </div>
+            <div class="fq">
+              <div class="fq-label">15. ¿Cuántas ventas por mes cree que pierde por falta de stock? <span class="fq-type c">cerrada</span></div>
+              <select onchange="updateProgress()"><option value="">— seleccionar —</option><option>Ninguna</option><option>1 a 5</option><option>6 a 15</option><option>Más de 15</option></select>
+            </div>
+            <div class="fq">
+              <div class="fq-label">16. ¿Qué tan difícil le resulta controlar el stock hoy? <span class="fq-type l">Likert 1–5</span></div>
+              <div class="fq-hint">→ 1 = muy fácil, 5 = muy difícil. Línea de base de dificultad.</div>
+              <div class="likert-row">
+                <label><input type="radio" name="q16" onchange="updateProgress()">1<br><small>Muy fácil</small></label>
+                <label><input type="radio" name="q16" onchange="updateProgress()">2</label>
+                <label><input type="radio" name="q16" onchange="updateProgress()">3</label>
+                <label><input type="radio" name="q16" onchange="updateProgress()">4</label>
+                <label><input type="radio" name="q16" onchange="updateProgress()">5<br><small>Muy difícil</small></label>
+              </div>
+            </div>
+            <div class="fq">
+              <div class="fq-label">17. ¿Qué tan cómodo se siente usando tecnología en general? <span class="fq-type l">Likert 1–5</span></div>
+              <div class="fq-hint">→ Define la complejidad máxima admisible de la interfaz. Restringe el diseño HCI.</div>
+              <div class="likert-row">
+                <label><input type="radio" name="q17" onchange="updateProgress()">1<br><small>Nada cómodo</small></label>
+                <label><input type="radio" name="q17" onchange="updateProgress()">2</label>
+                <label><input type="radio" name="q17" onchange="updateProgress()">3</label>
+                <label><input type="radio" name="q17" onchange="updateProgress()">4</label>
+                <label><input type="radio" name="q17" onchange="updateProgress()">5<br><small>Muy cómodo</small></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOQUE F -->
+        <div class="form-block">
+          <div class="form-block-header" onclick="toggleBlock(this)">
+            <div class="fb-num">F</div>
+            <div class="fb-title">Accesibilidad y visión <span class="new-tag">nuevo</span></div>
+            <div class="fb-badge embudo">Embudo + Sondeo</div>
+            <div class="fb-arrow">▼</div>
+          </div>
+          <div class="form-block-body">
+            <div class="note-box success" style="margin-bottom:.75rem;">La accesibilidad no es un bonus: es un <strong>requerimiento no funcional</strong>. Si el usuario tiene dificultad visual y el equipo no lo sabe, entrega un sistema que el cliente no puede usar cómodamente.</div>
+            <div class="fq">
+              <div class="fq-label">18. ¿Usa anteojos o lentes para leer o trabajar con pantallas? <span class="fq-type c">cerrada</span></div>
+              <div class="radio-group">
+                <label><input type="radio" name="q18" onchange="updateProgress()"> No, veo bien sin lentes</label>
+                <label><input type="radio" name="q18" onchange="updateProgress()"> Sí, para leer de cerca (presbicia)</label>
+                <label><input type="radio" name="q18" onchange="updateProgress()"> Sí, para ver de lejos (miopía)</label>
+                <label><input type="radio" name="q18" onchange="updateProgress()"> Sí, para ambas cosas</label>
+                <label><input type="radio" name="q18" onchange="updateProgress()"> Tengo indicación pero no los uso</label>
+              </div>
+            </div>
+            <div class="fq">
+              <div class="fq-label">19. ¿Le cuesta leer textos pequeños en el celular? <span class="fq-type s">sondeo</span></div>
+              <div class="fq-hint">→ Detectar si el tamaño de fuente mínimo necesita ajustarse. Impacta en cada pantalla del diseño.</div>
+              <div class="radio-group">
+                <label><input type="radio" name="q19" onchange="updateProgress()"> Sí, suelo agrandar el texto o hacer zoom</label>
+                <label><input type="radio" name="q19" onchange="updateProgress()"> A veces, cuando el texto es muy chico</label>
+                <label><input type="radio" name="q19" onchange="updateProgress()"> No, no me cuesta</label>
+              </div>
+            </div>
+            <div class="fq">
+              <div class="fq-label">20. ¿Tiene dificultad para distinguir ciertos colores? ¿Confunde el rojo con el verde? <span class="fq-type c">cerrada</span></div>
+              <div class="fq-hint">→ Detectar daltonismo. Si lo hay, el sistema no puede usar solo color para indicar estados de stock.</div>
+              <div class="radio-group">
+                <label><input type="radio" name="q20" onchange="updateProgress()"> No, distingo bien los colores</label>
+                <label><input type="radio" name="q20" onchange="updateProgress()"> Sí, a veces confundo rojos y verdes</label>
+                <label><input type="radio" name="q20" onchange="updateProgress()"> Sí, tengo daltonismo diagnosticado</label>
+                <label><input type="radio" name="q20" onchange="updateProgress()"> No estoy seguro</label>
+              </div>
+            </div>
+            <div class="fq">
+              <div class="fq-label">21. ¿Le molesta trabajar mucho tiempo frente a una pantalla muy brillante? <span class="fq-type c">cerrada</span></div>
+              <div class="fq-hint">→ Evaluar si es necesario ofrecer modo oscuro desde el inicio del desarrollo.</div>
+              <div class="radio-group">
+                <label><input type="radio" name="q21" onchange="updateProgress()"> Sí, me cansa la vista bastante</label>
+                <label><input type="radio" name="q21" onchange="updateProgress()"> A veces, depende del ambiente</label>
+                <label><input type="radio" name="q21" onchange="updateProgress()"> No, no me molesta</label>
+              </div>
+            </div>
+            <div class="fq">
+              <div class="fq-label">22. ¿Tiene alguna dificultad motriz en las manos (artritis, temblor, pantallas táctiles)? <span class="fq-type c">cerrada</span></div>
+              <div class="fq-hint">→ Si hay dificultad motriz, los botones deben ser más grandes y espaciados. Evitar gestos complejos.</div>
+              <div class="radio-group">
+                <label><input type="radio" name="q22" onchange="updateProgress()"> No, ninguna</label>
+                <label><input type="radio" name="q22" onchange="updateProgress()"> Sí, tengo artritis o dolor en las manos</label>
+                <label><input type="radio" name="q22" onchange="updateProgress()"> A veces me cuesta en pantallas táctiles pequeñas</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOQUE G -->
+        <div class="form-block">
+          <div class="form-block-header" onclick="toggleBlock(this)">
+            <div class="fb-num">G</div>
+            <div class="fb-title">Profundización</div>
+            <div class="fb-badge sondeo">Sondeo</div>
+            <div class="fb-arrow">▼</div>
+          </div>
+          <div class="form-block-body">
+            <div class="note-box info" style="margin-bottom:.75rem;">Preguntas que se disparan según lo que apareció antes. No son fijas: el entrevistador elige cuáles hacer según las respuestas del bloque D.</div>
+            <div class="fq">
+              <div class="fq-label">23. [Si mencionó pérdidas] ¿Puede darme un ejemplo concreto? <span class="fq-type s">sondeo</span></div>
+              <textarea placeholder="Notas del entrevistador..." oninput="updateProgress()"></textarea>
+            </div>
+            <div class="fq">
+              <div class="fq-label">24. [Si usa Excel] ¿Qué es lo que más le cuesta de mantenerlo? <span class="fq-type s">sondeo</span></div>
+              <textarea placeholder="Notas del entrevistador..." oninput="updateProgress()"></textarea>
+            </div>
+            <div class="fq">
+              <div class="fq-label">25. Si tuviera una herramienta que resolviera esto, ¿qué esperaría que hiciera primero? <span class="fq-type s">sondeo</span></div>
+              <div class="fq-hint">→ Clave para priorizar los requerimientos funcionales. La respuesta define el RF de alta prioridad.</div>
+              <textarea placeholder="Notas del entrevistador..." oninput="updateProgress()"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOQUE H -->
+        <div class="form-block">
+          <div class="form-block-header" onclick="toggleBlock(this)">
+            <div class="fb-num">H</div>
+            <div class="fb-title">Viabilidad comercial</div>
+            <div class="fb-badge diamante">Diamante — cierre</div>
+            <div class="fb-arrow">▼</div>
+          </div>
+          <div class="form-block-body">
+            <div class="note-box info" style="margin-bottom:.75rem;">Determina si el producto es vendible. Cierre del diamante: volvemos a preguntas cerradas para confirmar la viabilidad del proyecto.</div>
+            <div class="fq">
+              <div class="fq-label">26. ¿Conoce algún sistema de gestión de stock para ferreterías? <span class="fq-type c">cerrada</span></div>
+              <div class="radio-group">
+                <label><input type="radio" name="q26" onchange="updateProgress()"> Sí, y lo uso</label>
+                <label><input type="radio" name="q26" onchange="updateProgress()"> Sí, pero no lo uso (¿por qué? ___)</label>
+                <label><input type="radio" name="q26" onchange="updateProgress()"> No conozco ninguno</label>
+              </div>
+            </div>
+            <div class="fq">
+              <div class="fq-label">27. ¿Estaría dispuesto a pagar una suscripción mensual por una app que le ahorre tiempo? <span class="fq-type c">cerrada</span></div>
+              <select onchange="updateProgress()"><option value="">— seleccionar —</option><option>No pagaría nada</option><option>Hasta $5.000/mes</option><option>$5.000 a $15.000/mes</option><option>Más de $15.000/mes si vale la pena</option></select>
+            </div>
+            <div class="fq">
+              <div class="fq-label">28. ¿Lo recomendaría a otros ferreteros si funcionara bien? <span class="fq-type c">cerrada</span></div>
+              <div class="radio-group">
+                <label><input type="radio" name="q28" onchange="updateProgress()"> Sí, sin dudarlo</label>
+                <label><input type="radio" name="q28" onchange="updateProgress()"> Tal vez, dependería del precio</label>
+                <label><input type="radio" name="q28" onchange="updateProgress()"> No lo recomendaría</label>
+              </div>
+            </div>
+            <div class="note-box" style="margin-top:.75rem;">Registrar esta entrevista como hito en el control de cambios: fecha, entrevistador, versión del formulario (v2).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 03 ANÁLISIS -->
+<section id="analisis">
+  <div class="sec-label">03 — De la respuesta al dato</div>
+  <h2 class="sec-title">Análisis de resultados</h2>
+  <p class="sec-desc">Suponemos que Roberto respondió. Ahora transformamos sus respuestas en la línea de base del proyecto y separamos síntomas de causas reales.</p>
+
+  <div class="split">
+    <div class="split-explain">
+      <div class="explain-card">
+        <div class="explain-num">03</div>
+        <div class="explain-title">Síntomas vs. causas</div>
+        <div class="explain-body">
+          <p>El error más común: el equipo construye una solución al síntoma en lugar de a la causa. Si Roberto dice "a veces no tengo lo que el cliente pide" y el sistema solo muestra una alerta cuando el stock llega a cero, el problema no se resuelve.</p>
+          <p>La solución correcta ataca la <strong>causa</strong>: no hay actualización automática de stock por venta, y no hay señal de reposición anticipada.</p>
+        </div>
+      </div>
+      <div class="explain-card">
+        <div class="explain-title">La línea de base</div>
+        <div class="explain-body">
+          <p>Los números de la entrevista son la <strong>línea de base</strong>: el punto de partida medible. Al final del proyecto, el equipo tiene que volver con Roberto, repetir las mismas preguntas, y demostrar que los números mejoraron.</p>
+          <p>Sin línea de base, no hay forma de probar que el sistema funcionó.</p>
+        </div>
+      </div>
+      <div class="explain-card" style="border-color:#c45e1a22;background:#fff9f5;">
+        <div class="explain-title" style="color:var(--warm);">Las respuestas de Roberto</div>
+        <div class="explain-body">
+          <p>Celular como dispositivo principal · WhatsApp y Mercado Libre · WiFi con cortes frecuentes · Dos usuarios (él + Juan) · Le preocupa que Juan vea los precios de costo · Presbicia, usa lentes de lectura · Hace zoom en el celular · La pantalla brillante le cansa la vista · Sin daltonismo · Sin dificultad motriz</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="explain-card" style="margin-bottom:1rem;">
+        <div class="explain-title" style="margin-bottom:1rem;">Del síntoma a la causa real</div>
+        <div class="impact-matrix">
+          <div class="im-header"><div>Síntoma (lo que dice)</div><div>Causa real (lo que es)</div><div>Solución técnica</div></div>
+          <div class="im-row">
+            <div class="im-source">"A veces no tengo lo que piden"</div>
+            <div class="im-finding">No hay actualización automática de stock ni alerta de reposición</div>
+            <div class="im-impact">RF01 — Registro de ventas con descuento automático + RF02 — Alertas de stock mínimo</div>
+          </div>
+          <div class="im-row">
+            <div class="im-source">"El control me lleva 1–3 horas"</div>
+            <div class="im-finding">El inventario es manual; no existe registro digital actualizado por venta</div>
+            <div class="im-impact">RF01 — Al registrar una venta, el stock se actualiza solo</div>
+          </div>
+          <div class="im-row">
+            <div class="im-source">"Compro de más y no vendo"</div>
+            <div class="im-finding">No hay historial de rotación por producto; compra por intuición</div>
+            <div class="im-impact">RF04 — Historial de rotación + RF05 — Lista de pedido automática</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="explain-card">
+        <div class="explain-title" style="margin-bottom:1rem;">Línea de base — todos los datos medibles</div>
+        <div class="baseline-grid">
+          <div class="baseline-card"><div class="bc-label">Tiempo de control de stock</div><div class="bc-before">1 – 3 horas</div><div class="bc-after">→ objetivo: &lt;10 min</div></div>
+          <div class="baseline-card"><div class="bc-label">Ventas perdidas / mes</div><div class="bc-before">6 – 15</div><div class="bc-after">→ objetivo: 0 – 2</div></div>
+          <div class="baseline-card"><div class="bc-label">Dificultad del stock (Likert)</div><div class="bc-before">4 / 5</div><div class="bc-after">→ objetivo: ≤ 2/5</div></div>
+          <div class="baseline-card"><div class="bc-label">Comodidad tecnológica</div><div class="bc-before">2 / 5</div><div class="bc-warn">→ restricción HCI</div></div>
+          <div class="baseline-card bc-new"><div class="bc-label">Plataforma preferida ★</div><div class="bc-before" style="font-size:.9rem;color:var(--warn);">Celular</div><div class="bc-warn">→ diseño mobile-first</div></div>
+          <div class="baseline-card bc-new"><div class="bc-label">Conectividad en el local ★</div><div class="bc-before" style="font-size:.9rem;color:var(--warn);">WiFi inestable</div><div class="bc-warn">→ requiere modo offline</div></div>
+          <div class="baseline-card bc-new"><div class="bc-label">Usuarios del sistema ★</div><div class="bc-before" style="font-size:.9rem;color:var(--warn);">2 (Roberto + Juan)</div><div class="bc-warn">→ sistema multiusuario</div></div>
+          <div class="baseline-card bc-new"><div class="bc-label">Condición visual ★</div><div class="bc-before" style="font-size:.9rem;color:var(--warn);">Presbicia + zoom</div><div class="bc-warn">→ fuente mín. 18px</div></div>
+          <div class="baseline-card bc-new"><div class="bc-label">Fatiga visual ★</div><div class="bc-before" style="font-size:.9rem;color:var(--warn);">Pantalla brillante</div><div class="bc-warn">→ modo oscuro requerido</div></div>
+          <div class="baseline-card"><div class="bc-label">Disposición a pagar</div><div class="bc-before" style="color:var(--accent2);">hasta $15.000/mes</div><div class="bc-after">→ viable comercialmente</div></div>
+        </div>
+        <div class="note-box success" style="margin-top:1rem;">★ = datos que solo se obtienen con los bloques nuevos de la entrevista (B, C y F).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 04 REQUERIMIENTOS -->
+<section id="requerimientos">
+  <div class="sec-label">04 — El documento técnico</div>
+  <h2 class="sec-title">Requerimientos funcionales y no funcionales</h2>
+  <p class="sec-desc">Cada requerimiento debe poder trazarse hasta una respuesta concreta de la entrevista. Si no puede, no tiene justificación para estar en el proyecto.</p>
+
+  <div class="split">
+    <div class="split-explain">
+      <div class="explain-card">
+        <div class="explain-num">04</div>
+        <div class="explain-title">RF vs. RNF: ¿cuál es la diferencia?</div>
+        <div class="explain-body">
+          <p><span class="explain-tag et-rf">RF</span> <strong>Requerimiento Funcional:</strong> describe <em>qué hace</em> el sistema. "El sistema debe registrar ventas y descontar el stock automáticamente."</p>
+          <p><span class="explain-tag et-rnf">RNF</span> <strong>Requerimiento No Funcional:</strong> describe <em>cómo lo hace</em>. "El sistema debe funcionar sin internet y sincronizar cuando vuelva la conexión." Los RNF son igual de obligatorios que los RF.</p>
+          <p>Los RF marcados con <span class="new-tag">nuevo</span> nacen exclusivamente de los bloques B, C y F. Sin esas preguntas, esos requerimientos no existirían.</p>
+        </div>
+      </div>
+      <div class="explain-card">
+        <div class="explain-title">¿Dónde van en el documento?</div>
+        <div class="explain-body">
+          <p><span class="explain-tag et-rf">RF</span> Sección 4.1 — Requerimientos funcionales</p>
+          <p><span class="explain-tag et-rnf">RNF — plataforma</span> Sección 3.4.2 — Limitaciones de hardware</p>
+          <p><span class="explain-tag et-rnf">RNF — conectividad</span> Sección 3.4.6 — Protocolos señalados</p>
+          <p><span class="explain-tag et-rnf">RNF — accesibilidad</span> Sección 4.2 — Interfaces de usuario</p>
+          <p><span class="explain-tag et-rnf">RNF — seguridad</span> Sección 3.4.9 — Consideraciones de seguridad</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="tab-nav">
+        <button class="tab-btn active" onclick="switchTab('rf', event)">Funcionales (RF)</button>
+        <button class="tab-btn" onclick="switchTab('rnf', event)">No Funcionales (RNF)</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-rf">
+        <div style="overflow-x:auto;">
+          <table class="req-table">
+            <thead><tr><th>ID</th><th>Nombre</th><th>Prioridad</th><th>Origen</th></tr></thead>
+            <tbody>
+              <tr><td><div class="req-id">RF01</div></td><td><strong>Registro de ventas con descuento automático de stock</strong><div class="req-origin">Al registrar una venta, el sistema descuenta la cantidad sin intervención manual.</div></td><td><span class="req-prio prio-a">Alta</span></td><td style="font-size:.75rem;color:var(--ink3);">"Tardo horas en el control" + "a veces no tengo lo que piden"</td></tr>
+              <tr><td><div class="req-id">RF02</div></td><td><strong>Alerta de stock mínimo por producto</strong><div class="req-origin">Notificación cuando un producto llega al umbral configurable.</div></td><td><span class="req-prio prio-a">Alta</span></td><td style="font-size:.75rem;color:var(--ink3);">6–15 ventas perdidas por mes</td></tr>
+              <tr><td><div class="req-id">RF03</div></td><td><strong>Consulta de stock en tiempo real desde el mostrador</strong><div class="req-origin">Búsqueda optimizada para uso con una mano en celular.</div></td><td><span class="req-prio prio-a">Alta</span></td><td style="font-size:.75rem;color:var(--ink3);">"El cliente pide y no sé si tengo" + usa celular en el mostrador</td></tr>
+              <tr><td><div class="req-id">RF04</div></td><td><strong>Historial de rotación por producto</strong></td><td><span class="req-prio prio-m">Media</span></td><td style="font-size:.75rem;color:var(--ink3);">"Compro de más y no vendo"</td></tr>
+              <tr><td><div class="req-id">RF05</div></td><td><strong>Lista de pedido a proveedor exportable</strong></td><td><span class="req-prio prio-m">Media</span></td><td style="font-size:.75rem;color:var(--ink3);">"Pierdo tiempo revisando estantes para hacer pedidos"</td></tr>
+              <tr><td><div class="req-id">RF06 <span class="new-tag">nuevo</span></div></td><td><strong>Dos perfiles con permisos diferenciados</strong><div class="req-origin">Dueño: acceso total. Empleado: solo ventas y consulta. Sin precios de costo.</div></td><td><span class="req-prio prio-a">Alta</span></td><td style="font-size:.75rem;color:var(--ink3);">Bloque C: "Juan no debe ver precios de costo" (nuevo)</td></tr>
+              <tr><td><div class="req-id">RF07 <span class="new-tag">nuevo</span></div></td><td><strong>Funcionamiento offline con sincronización automática</strong></td><td><span class="req-prio prio-a">Alta</span></td><td style="font-size:.75rem;color:var(--ink3);">Bloque B: "WiFi con cortes frecuentes" (nuevo)</td></tr>
+              <tr><td><div class="req-id">RF08 <span class="new-tag">nuevo</span></div></td><td><strong>Envío de lista de pedido por WhatsApp</strong></td><td><span class="req-prio prio-m">Media</span></td><td style="font-size:.75rem;color:var(--ink3);">Bloque B: usa WhatsApp a diario (nuevo)</td></tr>
+              <tr><td><div class="req-id">RF09 <span class="new-tag">nuevo</span></div></td><td><strong>Modo oscuro conmutable por el usuario</strong></td><td><span class="req-prio prio-m">Media</span></td><td style="font-size:.75rem;color:var(--ink3);">Bloque F: pantalla brillante le cansa la vista (nuevo)</td></tr>
+              <tr><td><div class="req-id">RF10 <span class="new-tag">nuevo</span></div></td><td><strong>Onboarding guiado en el primer uso</strong></td><td><span class="req-prio prio-b">Baja</span></td><td style="font-size:.75rem;color:var(--ink3);">Bloque B: comodidad tecnológica 2/5 (nuevo)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-rnf">
+        <div style="overflow-x:auto;">
+          <table class="req-table">
+            <thead><tr><th>ID</th><th>Nombre y descripción</th><th>Categoría</th><th>Sección doc.</th></tr></thead>
+            <tbody>
+              <tr><td><div class="req-id">RNF-01</div></td><td><strong>Diseño mobile-first</strong><div class="req-origin">Todos los flujos críticos deben poder completarse con una sola mano en pantalla de 360–430px.</div></td><td><span class="explain-tag et-rnf" style="font-size:10px;">plataforma</span></td><td style="font-size:.75rem;color:var(--ink3);">3.4.2</td></tr>
+              <tr><td><div class="req-id">RNF-02</div></td><td><strong>Soporte para escala de texto al 150%</strong><div class="req-origin">El diseño no se rompe con el texto del sistema escalado. Usar unidades relativas (rem/em).</div></td><td><span class="explain-tag et-hci" style="font-size:10px;">accesibilidad</span></td><td style="font-size:.75rem;color:var(--ink3);">3.4.7</td></tr>
+              <tr><td><div class="req-id">RNF-03</div></td><td><strong>Fuente mínima 18px para texto de uso frecuente</strong><div class="req-origin">Todo texto crítico (productos, cantidades, alertas, botones) ≥ 18px. Origen: presbicia.</div></td><td><span class="explain-tag et-hci" style="font-size:10px;">accesibilidad</span></td><td style="font-size:.75rem;color:var(--ink3);">4.2</td></tr>
+              <tr><td><div class="req-id">RNF-04</div></td><td><strong>Contraste mínimo WCAG AA</strong><div class="req-origin">Ratio 4.5:1 para texto normal, 3:1 para texto grande. En ambos modos (claro y oscuro).</div></td><td><span class="explain-tag et-hci" style="font-size:10px;">accesibilidad</span></td><td style="font-size:.75rem;color:var(--ink3);">3.4.9</td></tr>
+              <tr><td><div class="req-id">RNF-05</div></td><td><strong>Estados del sistema nunca solo por color</strong><div class="req-origin">Toda alerta combina color + texto descriptivo o ícono. Buena práctica universal.</div></td><td><span class="explain-tag et-hci" style="font-size:10px;">accesibilidad</span></td><td style="font-size:.75rem;color:var(--ink3);">4.2</td></tr>
+              <tr><td><div class="req-id">RNF-06</div></td><td><strong>Funcionamiento offline sin pérdida de datos</strong><div class="req-origin">Opera sin internet, encola localmente, sincroniza automáticamente sin duplicados. Origen: WiFi con cortes.</div></td><td><span class="explain-tag et-rnf" style="font-size:10px;">conectividad</span></td><td style="font-size:.75rem;color:var(--ink3);">3.4.6</td></tr>
+              <tr><td><div class="req-id">RNF-07</div></td><td><strong>Aislamiento de datos entre perfiles</strong><div class="req-origin">El perfil Empleado no puede ver precios de costo. Control implementado en servidor, no solo en frontend.</div></td><td><span class="explain-tag et-rnf" style="font-size:10px;">seguridad</span></td><td style="font-size:.75rem;color:var(--ink3);">3.4.9</td></tr>
+              <tr><td><div class="req-id">RNF-08</div></td><td><strong>Tiempo de aprendizaje ≤ 30 minutos</strong><div class="req-origin">Un usuario con comodidad 2/5 completa el flujo principal sin ayuda en ≤30 min desde el primer uso.</div></td><td><span class="explain-tag et-hci" style="font-size:10px;">usabilidad</span></td><td style="font-size:.75rem;color:var(--ink3);">3.4.8</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 05 OKRs -->
+<section id="okrs">
+  <div class="sec-label">05 — Metas medibles</div>
+  <h2 class="sec-title">OKRs del proyecto</h2>
+  <p class="sec-desc">Cada objetivo tiene Key Results medibles con métricas concretas derivadas de la línea de base. Los KRs nuevos (en verde) nacen de los bloques B, C y F.</p>
+
+  <div class="split">
+    <div class="split-explain">
+      <div class="explain-card">
+        <div class="explain-num">05</div>
+        <div class="explain-title">¿Qué es un OKR?</div>
+        <div class="explain-body">
+          <p><strong>O (Objective):</strong> meta cualitativa e inspiradora. Lo que el equipo quiere lograr para el usuario. No se mide directamente.</p>
+          <p><strong>KR (Key Result):</strong> métrica cuantitativa de progreso. Debe poder responderse con un número. "Reducir el tiempo de control de stock a menos de 10 minutos" es un KR. "Mejorar la experiencia" no lo es.</p>
+          <p>Los KRs sin números son inútiles.</p>
+        </div>
+      </div>
+      <div class="explain-card">
+        <div class="explain-title">Por qué los OKRs nuevos son distintos</div>
+        <div class="explain-body">
+          <p>Los OKRs 4, 5 y 6 son los que más cuesta que los equipos entiendan como obligatorios.</p>
+          <p>El KR de contraste WCAG se <strong>audita con una herramienta</strong>. El KR de sincronización se <strong>mide con 10 pruebas</strong>. El KR del flujo sin zoom se <strong>observa en persona</strong> con Roberto.</p>
+          <p>Eso es lo que hace que un KR sea útil: puede verificarse con evidencia, no con una opinión.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="okr-group">
+        <div class="okr-obj"><div class="okr-obj-label">Objetivo 1</div><div class="okr-obj-text">Eliminar las pérdidas de venta por falta de stock</div></div>
+        <div class="okr-krs">
+          <div class="okr-kr"><div class="okr-kr-label">KR 1</div><div class="okr-kr-text">Reducir ventas perdidas por mes de 6–15 a 0–2 en los primeros 60 días de uso</div></div>
+          <div class="okr-kr"><div class="okr-kr-label">KR 2</div><div class="okr-kr-text">100% de los productos con stock mínimo configurado antes del lanzamiento</div></div>
+        </div>
+      </div>
+      <div class="okr-group">
+        <div class="okr-obj"><div class="okr-obj-label">Objetivo 2</div><div class="okr-obj-text">Hacer que el control de stock le lleve minutos, no horas</div></div>
+        <div class="okr-krs">
+          <div class="okr-kr"><div class="okr-kr-label">KR 1</div><div class="okr-kr-text">Reducir el tiempo de control de 1–3 horas a menos de 10 minutos</div></div>
+          <div class="okr-kr"><div class="okr-kr-label">KR 2</div><div class="okr-kr-text">Dificultad percibida ≤ 2/5 en prueba de usuario posterior al prototipo</div></div>
+        </div>
+      </div>
+      <div class="okr-group">
+        <div class="okr-obj"><div class="okr-obj-label">Objetivo 3</div><div class="okr-obj-text">Validar viabilidad comercial en el segmento de ferreterías de barrio</div></div>
+        <div class="okr-krs">
+          <div class="okr-kr"><div class="okr-kr-label">KR 1</div><div class="okr-kr-text">Entrevistar al menos 5 ferreteros y detectar la misma problemática en 3 o más</div></div>
+          <div class="okr-kr"><div class="okr-kr-label">KR 2</div><div class="okr-kr-text">Roberto declara intención de pago de al menos $5.000/mes al ver el prototipo</div></div>
+        </div>
+      </div>
+      <div class="okr-group new-group">
+        <div class="okr-obj"><div class="okr-obj-label">Objetivo 4 — nuevo · tecnología</div><div class="okr-obj-text">Que el sistema funcione de manera confiable en las condiciones reales del local</div></div>
+        <div class="okr-krs">
+          <div class="okr-kr"><div class="okr-kr-label">KR 1</div><div class="okr-kr-text new">Modo offline soporta ≥4 horas sin pérdida de datos (prueba controlada)</div></div>
+          <div class="okr-kr"><div class="okr-kr-label">KR 2</div><div class="okr-kr-text new">Sincronización &lt;10 segundos sin duplicados en 10 pruebas consecutivas</div></div>
+          <div class="okr-kr"><div class="okr-kr-label">KR 3</div><div class="okr-kr-text new">Lista de pedido enviada por WhatsApp en ≤3 toques desde la pantalla de alertas</div></div>
+        </div>
+      </div>
+      <div class="okr-group new-group">
+        <div class="okr-obj"><div class="okr-obj-label">Objetivo 5 — nuevo · usuarios</div><div class="okr-obj-text">Que Roberto tenga control total sobre qué puede ver y hacer Juan</div></div>
+        <div class="okr-krs">
+          <div class="okr-kr"><div class="okr-kr-label">KR 1</div><div class="okr-kr-text new">Perfil Empleado no accede a precios de costo en ningún flujo (prueba de penetración básica)</div></div>
+          <div class="okr-kr"><div class="okr-kr-label">KR 2</div><div class="okr-kr-text new">Roberto crea, modifica y desactiva la cuenta de Juan en ≤2 minutos sin ayuda</div></div>
+        </div>
+      </div>
+      <div class="okr-group new-group">
+        <div class="okr-obj"><div class="okr-obj-label">Objetivo 6 — nuevo · accesibilidad</div><div class="okr-obj-text">Que Roberto use el sistema cómodamente con su visión actual</div></div>
+        <div class="okr-krs">
+          <div class="okr-kr"><div class="okr-kr-label">KR 1</div><div class="okr-kr-text new">Roberto completa el flujo de venta sin hacer zoom (prueba observada con prototipo real)</div></div>
+          <div class="okr-kr"><div class="okr-kr-label">KR 2</div><div class="okr-kr-text new">Auditoría de contraste WCAG AA aprobada en modo claro y modo oscuro</div></div>
+          <div class="okr-kr"><div class="okr-kr-label">KR 3</div><div class="okr-kr-text new">Fatiga visual ≤2/5 después de 30 minutos de uso en modo oscuro (Likert)</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 06 PERFILES -->
+<section id="perfiles">
+  <div class="sec-label">06 — Sección 3.3 del documento</div>
+  <h2 class="sec-title">Perfiles de usuario</h2>
+  <p class="sec-desc">Cada persona que interactúa con el sistema es una fila en la tabla de perfiles. Sin esta tabla, los requerimientos funcionales son parciales.</p>
+
+  <div class="split">
+    <div class="split-explain">
+      <div class="explain-card">
+        <div class="explain-num">06</div>
+        <div class="explain-title">¿Por qué definir perfiles?</div>
+        <div class="explain-body">
+          <p>Cada perfil diferente implica: una pantalla de login distinta, una navegación adaptada, posiblemente una versión simplificada de la interfaz, y un conjunto de permisos diferente en el servidor.</p>
+          <p>Pasar de un usuario a dos no es agregar una pantalla más: es redefinir la arquitectura de acceso del sistema completo.</p>
+        </div>
+      </div>
+      <div class="explain-card" style="border-color:#e85d2422;background:#fff9f5;">
+        <div class="explain-title" style="color:var(--warm);">Juan todavía no fue entrevistado</div>
+        <div class="explain-body">
+          <p>El perfil del empleado está incompleto. Antes de diseñar su interfaz, hay que hacer una segunda entrevista. Su diseño puede diferir completamente del de Roberto si tiene condiciones de accesibilidad distintas.</p>
+          <p>No asumir que Juan tiene la misma comodidad tecnológica ni la misma visión que Roberto.</p>
+        </div>
+      </div>
+      <div class="explain-card">
+        <div class="explain-title">Lo que cada dato implica para Figma</div>
+        <div class="explain-body">
+          <p><strong>Celular →</strong> Frame en Figma: 390×844px. Todo se testea en ese tamaño primero.</p>
+          <p><strong>Presbicia →</strong> Estilos de texto arrancan en 18px. Ningún dato crítico en 14px o menos.</p>
+          <p><strong>WhatsApp →</strong> El patrón de lista de chats puede inspirar la lista de productos. Roberto ya lo sabe navegar.</p>
+          <p><strong>Fatiga visual →</strong> El prototipo incluye dos variantes: modo claro y modo oscuro. Ambas se testean con Roberto antes de programar.</p>
+          <p><strong>Nivel 2/5 →</strong> Sin menú hamburguesa. Sin iconografía sin etiqueta. La acción principal siempre visible como botón grande en la parte inferior.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="profiles-grid">
+        <div class="profile-card">
+          <div class="pc-header dono">
+            <div class="pc-avatar">RF</div>
+            <div><div class="pc-name">Roberto Fernández</div><div class="pc-sub">Perfil: Dueño · acceso total</div></div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-row"><div class="pc-k">Formación</div><div class="pc-v">Sec. completo, 22 años en ferretería</div></div>
+            <div class="pc-row"><div class="pc-k">Dispositivo</div><div class="pc-v warn">Celular (Android) — mobile-first</div></div>
+            <div class="pc-row"><div class="pc-k">Apps conocidas</div><div class="pc-v">WhatsApp, Mercado Libre</div></div>
+            <div class="pc-row"><div class="pc-k">Nivel tecnológico</div><div class="pc-v warn">2 / 5 — interfaz simple</div></div>
+            <div class="pc-row"><div class="pc-k">Visión</div><div class="pc-v warn">Presbicia, lentes de lectura</div></div>
+            <div class="pc-row"><div class="pc-k">Hace zoom</div><div class="pc-v warn">Sí — fuente mín. 18px</div></div>
+            <div class="pc-row"><div class="pc-k">Fatiga visual</div><div class="pc-v warn">Sí — modo oscuro requerido</div></div>
+            <div class="pc-row"><div class="pc-k">Daltonismo</div><div class="pc-v ok">No — paleta estándar OK</div></div>
+            <div class="pc-row"><div class="pc-k">Dificultad motriz</div><div class="pc-v ok">No — botones estándar OK</div></div>
+            <div class="pc-row"><div class="pc-k">Acceso</div><div class="pc-v">Total: todas las funciones, reportes, precios de costo, configuración</div></div>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="pc-header empleado">
+            <div class="pc-avatar" style="background:var(--bg);color:var(--ink3);">JG</div>
+            <div><div class="pc-name">Juan (empleado)</div><div class="pc-sub">Perfil: Empleado · acceso restringido</div></div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-row"><div class="pc-k">Formación</div><div class="pc-v pending">Pendiente — 2da entrevista</div></div>
+            <div class="pc-row"><div class="pc-k">Dispositivo</div><div class="pc-v pending">Pendiente</div></div>
+            <div class="pc-row"><div class="pc-k">Nivel tecnológico</div><div class="pc-v pending">Pendiente</div></div>
+            <div class="pc-row"><div class="pc-k">Visión</div><div class="pc-v pending">Pendiente</div></div>
+            <div class="pc-row"><div class="pc-k">Daltonismo</div><div class="pc-v pending">Pendiente</div></div>
+            <div class="pc-row"><div class="pc-k">Dificultad motriz</div><div class="pc-v pending">Pendiente</div></div>
+            <div class="pc-row"><div class="pc-k">Acceso</div><div class="pc-v warn">Solo: registro de ventas + consulta de stock. Sin precios de costo, sin reportes, sin configuración</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="note-box" style="margin-top:1rem;">El diseño de la interfaz de Juan no puede empezar hasta completar su perfil. Su interfaz puede ser más simple que la de Roberto si tiene mayor comodidad tecnológica, o requerir fuentes aún más grandes si tiene alguna condición visual.</div>
+
+      <div class="explain-card" style="margin-top:1.5rem;">
+        <div class="explain-title">Próximos pasos antes de programar</div>
+        <div class="steps-list">
+          <div class="step-item">
+            <div class="step-circle" style="font-size:.75rem;">1</div>
+            <div class="step-body"><div class="step-title">Entrevistar a Juan (empleado)</div><div class="step-desc">Completar el perfil de usuario pendiente. Aplicar el mismo formulario v2.</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-circle" style="font-size:.75rem;">2</div>
+            <div class="step-body"><div class="step-title">Replicar la entrevista en 2–3 ferreterías más</div><div class="step-desc">Validar que el problema no es exclusivo de Roberto. KR del Objetivo 3.</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-circle" style="font-size:.75rem;">3</div>
+            <div class="step-body"><div class="step-title">Hacer el Benchmarking</div><div class="step-desc">¿Qué sistemas existen? ¿Por qué Roberto no los usa? Estudiar la competencia.</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-circle" style="font-size:.75rem;">4</div>
+            <div class="step-body"><div class="step-title">Armar el mockup en Figma</div><div class="step-desc">Frame 390×844px, fuente mínima 18px, variante de modo oscuro incluida.</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-circle" style="font-size:.75rem;">5</div>
+            <div class="step-body"><div class="step-title">Volver con Roberto a validar el prototipo</div><div class="step-desc">Antes de programar. Registrar el feedback como hito en el control de cambios.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Evaluación de <span>Proyectos</span></div>
+      <div class="footer-desc">Material educativo para 7mo Informática 2026. Instituto Leonardo Murialdo. Caso de uso: Ferretería El Tornillo, Villa Bosch.</div>
+    </div>
+    <div class="footer-col">
+      <h4>Secciones</h4>
+      <a href="#caso">Caso de uso</a>
+      <a href="#entrevista">Formulario de entrevista</a>
+      <a href="#analisis">Análisis de resultados</a>
+      <a href="#requerimientos">Requerimientos</a>
+      <a href="#okrs">OKRs</a>
+      <a href="#perfiles">Perfiles de usuario</a>
+    </div>
+    <div class="footer-col">
+      <h4>Referencias</h4>
+      <p>Módulo 01 — El Proyecto y sus generalidades</p>
+      <p>Módulo 02 — Fases de un Proyecto</p>
+      <p>Lineamientos y Metodologías de trabajo 2026</p>
+      <p>PMBOK — Fases del proyecto</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>Prof. Pedaci, Lourdes · Instituto Leonardo Murialdo · 7mo Informática 2026</div>
+    <div>Evaluación de Proyectos</div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
