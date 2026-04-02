@@ -10,7 +10,7 @@
 
 Sitio web educativo de una sola página (SPA estática) que recorre de forma completa el proceso de relevamiento y análisis de un proyecto de software real: desde la entrevista inicial con el cliente hasta la definición de requerimientos y OKRs medibles.
 
-El caso de uso está basado en **Roberto Fernández**, dueño de la Ferretería El Tornillo (Villa Bosch, Tres de Febrero), y sirve como referencia concreta para que los alumnos aprendan a:
+El caso de uso está basado en **Roberto Fernández**, dueño de la Ferretería El Tornillo (Villa Bosch, Tres de Febrero), y sirve como referencia concreta para que los estudiantes aprendan a:
 
 - Diseñar y aplicar una entrevista estructurada de relevamiento
 - Distinguir síntomas de causas reales en el diagnóstico de un problema
